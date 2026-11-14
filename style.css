@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+
+/*Resets the default browser padding and margins on all elements and ensures that padding and borders are included in an element's total width and height calculations for consistent layout control.*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./images/pawel-czerwinski-VhG_oPx5CEY-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Source Sans 3', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box > img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    background-color: #F4F9FC;
+    margin: 50px;
+    box-shadow: 0 20px 50px rgba(36, 59, 90, 0.15);
+    border-left: 50px solid #F4F9FC;
+    border-right: 50px solid #F4F9FC;
+}
+
+.container .top {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 40px;
+    padding-bottom: 0;
+    /*gap: 20px;*/
+}
+
+.container .top .img-box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.top .profile-text {
+    position: relative;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-text > h3 {
+    font-family: 'Lora', serif;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    font-weight: #333;
+    color: #333;
+}
+
+.profile-text span {
+    position: relative;
+    font-size: 0.5em;
+    font-weight: 300;
+    top: -10px;
+}
+
+.content-box {
+    position: relative;
+    min-height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 40px 40px;
+}
+
+.content-box h3 {
+    font-family: 'Lora', serif;
+    border-left: 4px solid #3296B5;
+    padding-left: 10px;
+    line-height: 1em;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.content-box ul {
+    position: relative;
+    margin: 10px 0;
+}
+
+.content-box ul li {
+    list-style: none;
+    margin: 25px 0;
+    line-height: 1em;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+}
+
+.left-content .icon {
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: rgb(141, 190, 255);
+}
+
+.education li {
+    flex-direction: column;
+    margin: 25px 0;
+}
+
+h5 {
+    color: #243B5A;
+}
+
+h4 {
+    color: #333;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+h6 {
+    color: #666;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.language li {
+    flex-direction: column;
+}
+
+.language span {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.language .percent {
+    position: relative;
+    width: 100%;
+    background-color: gainsboro;
+    height: 6px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: block;
+    overflow: hidden;
+}
+
+.percent > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #3296B5;
+}
+
+.interests {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.interests li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.interests .icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-style: 300;
+}
+
+.right-content {
+    padding-left: 40px;
+}
+
+
+/* Experience section */
+.experience .box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 25px 0;
+}
+
+/* Dates and company names */
+.experience .year_company {
+    margin-bottom: 5px;
+}
+
+.experience .year_company h5 {
+    color: #802F1F;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* Job titles */
+.experience .text h4 {
+    color: #243B5A;
+    font-weight: 600;
+}
+
+/* Job descriptions */
+.experience .text p {
+    color: #222;
+    line-height: 1.3em;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+/* Professional Skills Section */
+.skills {
+    margin-top: 40px;
+}
+
+/* Align skill names and progress bars horizontally */
+.skills .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+/* Skill names */
+.skills .box h4{
+    width: 30%;
+    color: #333;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Progress bar background */
+.skills .box .percent {
+    position: relative;
+    width: 65%;
+    height: 8px;
+    background-color: gainsboro;
+    display: block;
+    overflow: hidden;
+}
+
+/* Coloured progress level */
+.skills .box .percent > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #3296B5;
+}
+
+.profile-text span {
+    color: #802F1F;
+}
+
+/* =================================
+   TABLET RESPONSIVENESS
+   Screens up to 900px
+================================= */
+
+@media screen and (max-width: 900px) {
+
+    body {
+        align-items: flex-start;
+        padding: 20px 0;
+        background-attachment: scroll;
+    }
+
+    .container {
+        width: 95%;
+        margin: 20px auto;
+        border-left: 20px solid #F4F9FC;
+        border-right: 20px solid #F4F9FC;
+    }
+
+    .container .top {
+        grid-template-columns: 160px 1fr;
+        padding: 30px;
+    }
+
+    .box > img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .profile-text {
+        padding: 20px;
+    }
+
+    .profile-text > h3 {
+        font-size: 2.4em;
+    }
+
+    .content-box {
+        grid-template-columns: 1fr;
+        padding: 0 30px 30px;
+    }
+
+    .right-content {
+        padding-left: 0;
+    }
+
+    .content-box h3 {
+        margin-top: 35px;
+    }
+
+    .interests {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =================================
+   MOBILE RESPONSIVENESS
+   Screens up to 600px
+================================= */
+
+@media screen and (max-width: 600px) {
+
+    body {
+        padding: 10px 0;
+    }
+
+    .container {
+        width: 96%;
+        margin: 10px auto;
+        border: none;
+    }
+
+    .container .top {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        padding: 25px 15px;
+    }
+
+    .container .top .img-box {
+        justify-content: center;
+    }
+
+    .box > img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .top .profile-text {
+        justify-content: center;
+        padding: 20px 0 10px;
+    }
+
+    .profile-text > h3 {
+        font-size: 2em;
+        letter-spacing: 0.06em;
+    }
+
+    .profile-text span {
+        font-size: 0.55em;
+        top: 0;
+    }
+
+    .content-box {
+        padding: 0 20px 25px;
+    }
+
+    .content-box h3 {
+        font-size: 1.1em;
+        margin-top: 30px;
+    }
+
+    .right-content {
+        padding-left: 0;
+    }
+
+    .experience .year_company h5 {
+        font-size: 0.85em;
+    }
+
+    .experience .text p {
+        font-size: 0.95em;
+        line-height: 1.5em;
+    }
+
+    .skills .box {
+        gap: 15px;
+    }
+
+    .skills .box h4 {
+        width: 40%;
+        font-size: 0.9em;
+    }
+
+    .skills .box .percent {
+        width: 60%;
+    }
+
+    .interests {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .content-box ul li {
+        font-size: 0.95em;
+        overflow-wrap: anywhere;
+    }
+}
+
+
+/* =================================
+   SMALL MOBILE SCREENS
+   Screens up to 380px
+================================= */
+
+@media screen and (max-width: 380px) {
+
+    .container .top {
+        padding: 20px 10px;
+    }
+
+    .profile-text > h3 {
+        font-size: 1.7em;
+    }
+
+    .content-box {
+        padding: 0 15px 20px;
+    }
+
+    .interests {
+        grid-template-columns: 1fr;
+    }
+
+    .skills .box h4 {
+        font-size: 0.8em;
+    }
+}
