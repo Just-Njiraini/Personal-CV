@@ -26,6 +26,6 @@ Ionicons
 
 Live Demo
 
-View My CV
+#https://just-njiraini.github.io/Personal-CV/
 
 Developed by Allan Njiraini.
